@@ -7,7 +7,7 @@ const line = document.querySelector(".main_1_menu__line");
 // Hiện cửa sổ popup nhận thông tin. Đang test tạm thời
 const popUpInput = document.querySelector(".popUpInput");
 setTimeout(() => {
-  // popUpInput.style.display = "block";
+  popUpInput.style.display = "block";
 }, 3000);
 
 document.querySelector(".inputEmail i").addEventListener("click", () => {
@@ -65,6 +65,8 @@ main_1_menu_BEN.addEventListener("click", () => {
 
     BEN_PRO.style.display = "block";
     BEN_VAN.style.display = "block";
+    BEN_PRO.style.textAlign = "center";
+    BEN_VAN.style.textAlign = "center";
 });
 
 // Bấm vô tất cả 
