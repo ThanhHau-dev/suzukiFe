@@ -1,0 +1,64 @@
+/* css cho footer */
+.footer {
+    margin-top: 150px;
+}
+
+.footer h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.footer_2 img{
+    width: 200px;
+    object-fit: cover;
+}
+
+.footer_2 {
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+
+.footer_2 h5 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.footer_2 p {
+    margin-top: 20px;
+}
+
+.footer_2 h5 {
+    color: #001151;
+}
+
+.footer_3 {
+    padding: 40px;
+    background-color: #f4f4f4;
+    color:#001151;
+}
+
+.htech_performance {
+    text-align: center;
+}
+
+/* css cho mobile */
+@media (max-width: 768px) {
+    .footer h5 {
+        font-size: 15px;
+      }
+    
+      .footer a {
+        font-size: 12px;
+      }
+}

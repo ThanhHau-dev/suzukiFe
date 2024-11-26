@@ -1,0 +1,251 @@
+:root{
+    --colorCenter: #001151;
+}
+
+.ProductDetails img {
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: var(--colorCenter);
+}
+
+/* đây là nút button xem chi tiết xài chung cho cả page */
+.describe_a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-bottom: 3px solid #d2d2d2;
+    font-size: 20px;
+    align-items: center;
+    padding-bottom: 13px;
+    width: 50%;
+    /* white-space: nowrap; */
+  }
+  
+  .describe_a:hover {
+    border-bottom: 3px solid #001151;
+  }
+  
+  .describe_button {
+    margin-left: 40%;
+    background-color: white;
+    color: #001151;
+    padding-bottom: 9px;
+    padding-top: 10px;
+    width: 60px;
+    border: none;
+    border-bottom: 3px solid #001151;
+  }
+  
+  .describe_button:hover {
+    background-color: #001151;
+    color: white;
+  }
+
+/* css cho ProductDetails_1 */
+
+.ProductDetails_1, .ProductDetails_2 {
+   padding: 50px;
+}
+
+
+.ProductDetails_1_ĐK_nhan_thong_tin {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.ProductDetails_1 h1 {
+    color: var(--colorCenter);
+    font-weight: bold;
+}
+
+.ProductDetails_1 p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 150px;
+    padding: 100px;
+}
+
+/* css cho ProductDetails_2 */
+
+
+.ProductDetails_2 h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--colorCenter);
+}
+
+.ProductDetails_2_more {
+    margin-top: 100px;
+}
+
+.ProductDetails_2_1 {
+    margin-top: 100px;
+}
+
+.ProductDetails_2_2 {
+    margin-top: 100px;
+}
+
+.ProductDetails_2_3, .ProductDetails_2_4, .ProductDetails_2_5 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.ProductDetails_2_3 h2, .ProductDetails_2_4 h2 {
+    font-weight: bold;
+    margin-top: 120%;
+}
+
+.ProductDetails_2_5 h2 {
+    font-weight: bold;
+    margin-top: 60%;
+}
+
+.ProductDetails_2_7 {
+    margin-top: 80px;
+}
+
+.ProductDetails_2_7 h2 {
+    font-weight: bold;
+}
+
+/* css cho ProductDetails_3 */
+
+.ProductDetails_3_1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* css cho ProductDetails_4 */
+
+
+.ProductDetails_4 h1 {
+    margin-bottom: 100px;
+    font-weight: bold;
+    color: var(--colorCenter);
+    text-transform: uppercase;
+}
+
+.ProductDetails_4 p {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.ProductDetails_4 i{
+    font-size: 50px;
+    color: var(--colorCenter);
+}
+
+/* css cho mobile */
+@media (max-width: 768px) {
+
+    /* đây là nút button xem chi tiết xài chung cho cả page */
+.describe_a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-bottom: 2px solid #d2d2d2;
+    font-size: 15px;
+    align-items: center;
+    padding-bottom: 13px;
+    width: 50%;
+    /* white-space: nowrap; */
+  }
+  
+  .describe_button {
+    margin-left: 40%;
+    width: 35px;
+    border-bottom: 2px solid #001151;
+  }
+  
+  .ProductDetails_1 {
+    margin-bottom: 0;
+  }
+
+    .ProductDetails_1 img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .ProductDetails_1_ĐK_nhan_thong_tin {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .ProductDetails_1 h1 {
+        margin-top: 30px;
+    }
+
+    .ProductDetails_1 p {
+        font-size: 16px;
+        margin-top: 100px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .ProductDetails_1, .ProductDetails_2 {
+        padding: 20px;
+     }
+
+    .ProductDetails_2 {
+        margin-top: 10px;
+    }
+
+    .ProductDetails_2 h1 {
+        margin-top: 40px;
+    }
+
+    .ProductDetails_2 p {
+        margin-top: 30px;
+    }
+
+    .ProductDetails_2_1 {
+        margin-top: 50px;
+    }
+
+    .ProductDetails_2_3 h2 {
+        margin-top: 45px;
+    }
+
+    .ProductDetails_2_4 h2 {
+        margin-top: 0;
+    }
+
+    .ProductDetails_2_5 h2 {
+        margin-top: 35px;
+    }
+
+    .ProductDetails_2_7 h2 {
+        margin-top: 35px;
+    }
+
+    .ProductDetails_3 h4 {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .ProductDetails_3 p {
+        font-size: 14px;
+    }
+
+    .ProductDetails_4 i {
+        font-size: 40px;
+    }
+
+    .ProductDetails_4 p {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    
+
+    
+}

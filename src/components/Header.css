@@ -1,0 +1,107 @@
+
+/* css cho header */
+.header_menu {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: fixed; /* khi dùng thuộc tính này, phần tử sẽ mất toàn bộ thuộc tính cha, đã đc setup từ trước*/
+    margin-top: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.4); /* Bóng mờ và nhẹ */
+}
+
+.navbar {
+    padding-left: 50px;
+}
+
+.header_menu img {
+    width: 20%;
+}
+
+.menuMobile {
+  display: none;
+}
+
+/* 
+.header_banner_2 img, .header_banner_1 img {
+    width: 100%;
+    height: 535px;
+    object-fit: cover;
+} */
+
+/* css cho header mobile */
+@media (max-width: 768px) {
+    .header_menu {
+        display: none;
+    }
+
+
+  /* css cho header mobile */
+  .menuMobile {
+    display: flex;
+    top: 0;
+    position: fixed;
+    z-index: 3000;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.4); /* Bóng mờ và nhẹ */
+  }
+
+  .menuMobile img {
+    padding: 15px;
+    width: 85%;
+  }
+
+  .menuMobile i {
+    font-size: 30px;
+    margin-left: 80%;
+    margin-top: 3%;
+  }
+
+  .menuMobile li {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  /* ----------------------- */
+}
+
+/* css cho pc nhỏ và table */
+
+@media (min-width: 768px) and (max-width: 1030px) {
+    .header_menu {
+      display: none;
+    }
+    .menuMobile {
+      display: flex;
+      top: 0;
+      position: fixed;
+      z-index: 3000;
+      background-color: white;
+      width: 100%;
+      align-items: center;
+      box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.4); /* Bóng mờ và nhẹ */
+    }
+  
+    .menuMobile img {
+      padding: 10px;
+      width: 35%;
+    }
+  
+    .menuMobile i {
+      font-size: 40px;
+      margin-left: 90%;
+      margin-top: 3%;
+    }
+  
+    .menuMobile li {
+      padding: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }

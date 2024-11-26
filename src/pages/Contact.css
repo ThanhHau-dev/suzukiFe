@@ -1,0 +1,46 @@
+:root{
+    --colorCenter: #001151;
+}
+
+
+.Contact img {
+    width: 100%;
+}
+
+.Contact_1 {
+    margin-top: 80px;
+}
+
+.Contact_1 h1 {
+    color: var(--colorCenter);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn_Contact {
+    background-color: #001151;
+    text-transform: uppercase;
+    width: 300px;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 40%;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .Contact_1 h1 {
+        margin-bottom:15px;
+        margin-top: 30px;
+    }
+
+    .btn_Contact {
+        margin-left: 10%;
+        padding: 8px;
+    }
+}

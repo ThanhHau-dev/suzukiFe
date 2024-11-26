@@ -1,0 +1,860 @@
+:root {
+  --colorCenter: #001151;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SuzukiRegular";
+  src: url("SuzukiPRORegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main_1, .main_2_describe, .main_4, .main_5 {
+  padding-left: 50px;
+  padding-right: 50px;
+} 
+
+
+.popUpInput {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.inputEmail {
+  background-color: white;
+  margin-top: 2%;
+  padding: 40px;
+}
+
+.inputEmail i {
+  font-size: 35px;
+  margin-left: 95%;
+  padding: 0;
+  margin-top: 0;
+  color: #d2d2d2;
+}
+
+.inputEmail i:hover {
+  font-size: 40px;
+  color: red;
+  cursor: pointer;
+}
+
+.inputEmail img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.inputEmail input,
+.inputEmail select {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.inputEmail button {
+  margin-top: 20px;
+}
+
+.inputEmail h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(101, 101, 101);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.inputEmail p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.inputEmail label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#traGop,
+#traThang {
+  margin-left: 30px;
+}
+
+.btn-EmailAction {
+  background-color: #002dce;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 40%;
+  padding: 10px;
+}
+
+.btn-EmailAction:hover {
+  background-color: white;
+  color: #002dce;
+  border: 1px solid;
+}
+
+/* một số css chung */
+.card {
+  border: none;
+  padding: 5px;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* css cho header */
+.header_menu {
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: fixed; /* khi dùng thuộc tính này, phần tử sẽ mất toàn bộ thuộc tính cha, đã đc setup từ trước*/
+  margin-top: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.4); /* Bóng mờ và nhẹ */
+}
+
+.menuMobile {
+  display: none;
+}
+
+.navbar {
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.header_menu img {
+  width: 100%;
+}
+
+.header_banner img {
+  width: 100%;
+  /* object-fit: contain; */
+}
+
+/* css cho banner header */
+/* Thiết lập chung */
+.container-fluid {
+  padding: 0;
+}
+
+.header_banner {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_banner .row {
+  display: flex;
+}
+
+/* Cột bên trái (chứa ảnh đầu tiên) */
+.header_banner_1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Giúp ảnh vừa khít không bị méo */
+}
+
+/* Cột bên phải (chứa hai ảnh chồng nhau) */
+.header_banner_2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.header_banner_2 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* ------- */
+
+.header_banner .col-md-6 {
+  padding: 0;
+}
+
+.header i {
+  font-size: 25px;
+}
+
+/* css cho main 1 */
+
+.main_1 {
+  margin-top: 100px;
+}
+
+.main_1_menu {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+.main_1_menu_car {
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main_1_menu_Action {
+  color: var(--colorCenter);
+}
+
+.main_1_menu__line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 120px;
+  height: 3px;
+  background-color: #001151;
+  color: #001151;
+}
+
+.main_1 h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #001151;
+}
+
+.main_1 h3,
+h4 {
+  font-weight: bold;
+}
+
+.main_1 h3 {
+  text-transform: uppercase;
+}
+
+.main_1 img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.main_1 .card {
+  height: 400px;
+  overflow: hidden; /* Chặn nội dung vượt quá */
+  justify-content: space-between; /* Canh đều nội dung trong card */
+  display: flex;
+  padding: 20px;
+  object-fit: cover;
+}
+
+/* cái này có thể ảnh toàn bộ card trên page, nút nằm đúng vị trí chỗ này nhưng sai chỗ khác */
+.card_button {
+  margin-left: 35%;
+  border: none;
+  background: none;
+  font-size: 35px;
+  width: 60px;
+  border-bottom: 3px solid #001151;
+}
+
+.card_button:hover {
+  background-color: #001151;
+  color: white;
+}
+
+/* css cho main_2 */
+.main_2 {
+  margin-top: 100px;
+}
+
+.main_2 .imgBanner img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.main_2_describe {
+  margin-top: 40px;
+}
+
+.main_2_describe h3,
+span {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.main_2_describe span {
+  color: #001151;
+}
+
+.main_2_describe p {
+  margin-top: 40px;
+}
+
+/* đây là nút button xem chi tiết xài chung cho cả page */
+.describe_a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  border-bottom: 2px solid #d2d2d2;
+  font-size: 20px;
+  align-items: center;
+  padding-bottom: 13px;
+  width: 50%;
+  /* white-space: nowrap; */
+}
+
+.describe_a:hover {
+  border-bottom: 3px solid #001151;
+}
+
+.describe_button {
+  margin-left: 40%;
+  background-color: white;
+  color: #001151;
+  padding-bottom: 9px;
+  padding-top: 10px;
+  width: 60px;
+  border: none;
+  border-bottom: 3px solid #001151;
+}
+
+.describe_button:hover {
+  background-color: #001151;
+  color: white;
+}
+/* --------- */
+
+.main_2_describe i {
+  font-size: 35px;
+}
+
+/* css main 3 */
+
+.main_3 {
+  margin-top: 130px;
+}
+
+.imgBanner_3 img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* css cho main_4 */
+.main_4 {
+  margin-top: 100px;
+}
+
+.main_4 h4 {
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 20px;
+  color: var(--colorCenter);
+}
+
+.main_4 p {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.main_4 span,
+.main_5 span {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #001151;
+}
+
+.main_4 .describe_a,
+.main_5 .describe_a {
+  margin-left: 15px;
+}
+
+/* css cho main 5 */
+
+.main_5 {
+  margin-top: 50px;
+}
+
+.main_5 h3 {
+  color: #001151;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.main_5 p {
+  padding: 10px;
+  margin-top: 30px;
+}
+.main_5 h5 {
+  margin-left: 10px;
+  color: #001151;
+}
+
+/* css border img, card chung cho main 4 và main 5 */
+
+.main_4 img,
+.main_5 img {
+  border-radius: 10px;
+}
+
+.main_4 .card,
+.main_5 .card {
+  overflow: hidden;
+  justify-content: space-between; /* Canh đều nội dung trong card */
+}
+
+/* css cho footer */
+.footer {
+  margin-top: 150px;
+}
+
+.footer h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.footer_2 img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.footer_2 {
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+
+.footer_2 h5 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.footer_2 p {
+  margin-top: 20px;
+}
+
+.footer_2 h5 {
+  color: #001151;
+}
+
+.footer_3 {
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #001151;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* css cho mobile */
+@media (max-width: 768px) {
+  .header_menu {
+    display: none;
+  }
+
+  /* css cho header mobile */
+  .menuMobile {
+    display: flex;
+    top: 0;
+    position: fixed;
+    z-index: 5000;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.4); /* Bóng mờ và nhẹ */
+  }
+
+  .menuMobile img {
+    padding: 15px;
+    width: 85%;
+  }
+
+  .menuMobile i {
+    font-size: 30px;
+    margin-left: 80%;
+    margin-top: 3%;
+  }
+
+  .menuMobile li {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  /* ----------------------- */
+
+  .main_1 h1 {
+    font-size: 30px;
+  }
+
+  .main_1_menu_car {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .card-img-top img {
+    padding: 0;
+    margin: 0;
+  }
+
+  .main_1_renderProduct .col-6 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .main_4_custom_col {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+
+  .main_1 h3 {
+    font-size: 17px;
+  }
+
+  .main_1 span {
+    font-size: 13px;
+  }
+
+  .card_button {
+    font-size: 20px;
+    border-bottom: 2px solid var(--colorCenter);
+  }
+
+  .main_2_describe p {
+    font-size: 14px;
+  }
+
+  .main_2_describe .describe_a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-bottom: 2px solid #d2d2d2;
+    font-size: 15px;
+    align-items: center;
+    padding-bottom: 13px;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .main_2_describe i {
+    font-size: 22px;
+  }
+
+  .describe_button {
+    border-bottom: 2px solid #001151;
+  }
+
+  .main_4 .col-md-4,
+  .main_4 .main_4_custom_col {
+    flex: 0 0 90%;
+    max-width: 100%;
+    margin-left: 1px;
+  }
+
+  .main_4_custom_col {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+
+  .main_4 h4 {
+    font-weight: bold;
+    padding: 0px;
+    margin-top: 15px;
+  }
+
+  .main_4 p,
+  .main_5 p {
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .main_4 .describe_a,
+  .main_5 .describe_a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-bottom: 2px solid #d2d2d2;
+    font-size: 15px;
+    align-items: center;
+    padding-bottom: 13px;
+    width: 50%;
+    white-space: nowrap;
+  }
+  .main_4 .describe_button {
+    margin-left: 40%;
+    background-color: white;
+    color: #001151;
+    padding-bottom: 9px;
+    padding-top: 10px;
+    width: 35px;
+    border: none;
+    border-bottom: 2px solid #001151;
+  }
+
+  /* css cho main 5 */
+  .main_5 .col-md-3,
+  .main_5 .main_4_custom_col {
+    flex: 0 0 90%;
+    max-width: 100%;
+    margin-left: 1px;
+  }
+
+  .main_5 .describe_button {
+    width: 35px;
+  }
+
+  .footer h5 {
+    font-size: 15px;
+  }
+
+  .footer a {
+    font-size: 12px;
+  }
+
+  /* css lại padding cho một số main ở mobile  */
+   .main_1, .main_2_describe, .main_4, .main_5 {
+    padding-left: 20px;
+    padding-right: 20px;
+  } 
+
+  /* reponse cho popup trang chủ ở điện thoại */
+
+  .inputEmail {
+    margin-top: 117px;
+    padding: 30px;
+    padding-top: 17px;
+    margin-right: 10px;
+  }
+
+
+.inputEmail input,
+.inputEmail select {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+.inputEmail button {
+  margin-top: 13px;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  margin-left: 33%;
+}
+
+.inputEmail h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.inputEmail p {
+  
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.inputEmail label {
+
+  font-size: 15px;
+}
+
+.inputEmail i {
+  margin-left: 89%;
+}
+
+}
+
+/* css cho pc nhỏ và table */
+
+@media (min-width: 768px) and (max-width: 1030px) {
+  .menuMobile {
+    display: flex;
+    top: 0;
+    position: fixed;
+    /* z-index: 3000; */
+    background-color: white;
+    width: 100%;
+    align-items: center;
+    box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.4); /* Bóng mờ và nhẹ */
+  }
+
+  .menuMobile img {
+    padding: 10px;
+    width: 35%;
+  }
+
+  .menuMobile i {
+    font-size: 40px;
+    margin-left: 90%;
+    margin-top: 3%;
+  }
+
+  .menuMobile li {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* reponse popup trang chủ cho màn table và pc nhỏ */
+  .inputEmail {
+    margin-top: 117px;
+    padding: 30px;
+    padding-top: 17px;
+  }
+
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* Bổ sung nút gọi và nút zalo ở trang chủ */
+.call-buttons-container-home {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  display: flex;
+  flex-direction: column; /* Đặt các nút theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.call-buttons-container-home button {
+  border: none;
+  background: none;
+}
+
+.call-button-call-home {
+  position: relative; /* Để đảm bảo các phần tử con được đặt đúng */
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  bottom: 50px;
+}
+
+.call-button-zalo-home {
+  position: relative; /* Để đảm bảo các phần tử con được đặt đúng */
+  width: 50px;
+  height: 60px;
+  cursor: pointer;
+  bottom: 40px;
+  padding: 8px;
+}
+
+.img_icon_home {
+  position: relative; /* Đảm bảo hình ảnh đứng yên */
+  width: 63px;
+  z-index: 2;
+  animation: shake-around-axis 0.4s infinite alternate;
+}
+
+.img_icon_zalo {
+  position: relative; /* Đảm bảo hình ảnh đứng yên */
+  width: 45px;
+  z-index: 2;
+  animation: shake-around-axis 0.4s infinite alternate;
+}
+
+.call-button-call-home .button-background-call-home {
+  position: fixed;
+  bottom: 168px;
+  left: 21px;
+  width: 60px;
+  height: 60px;
+  background-color: #0084ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  cursor: pointer;
+  animation: shaketest 0.9s infinite;
+}
+
+.call-button-zalo-home .button-background-zalo-home {
+  position: fixed;
+  bottom: 88px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #0084ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  cursor: pointer;
+  animation: shaketest 0.8s infinite;
+}
+
+/* Định nghĩa keyframes cho hiệu ứng rung lắc */
+@keyframes shaketest {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.5); 
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Tạo hiệu ứng lắc cho hình icon */
+@keyframes shake-around-axis {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  75% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+/* Thương hiệu thiết kế web */
+.htech_performance {
+  text-align: center;
+}

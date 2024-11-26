@@ -1,0 +1,24 @@
+
+.Dai_ly img{
+    width: 100%;
+}
+
+.Dai_ly h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 100px;
+    color:#001151;
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+}
+
+@media (max-width: 768px) {
+    .Dai_ly h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+}

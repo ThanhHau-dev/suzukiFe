@@ -1,0 +1,51 @@
+:root{
+    --colorCenter: #001151;
+}
+
+
+.EmailFooter {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid var(--colorCenter);
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.EmailFooter h4 {
+    color: var(--colorCenter);
+    font-weight: bold !important;
+}
+
+.EmailFooter .form-control {
+    margin-top: 16px;
+    border: 1px solid rgb(0, 0, 156);
+    border-radius: 0;
+}
+
+.EmailFooter .btn_EmailFooter {
+    margin-top: 13px;
+    border-radius: 0;
+    background-color: var(--colorCenter);
+    color: white;
+}
+
+.EmailFooter h2 {
+    font-weight:bold;
+    margin-top: 25px;
+    color:#0025ab;
+}
+
+.EmailFooter span {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .EmailFooter {
+        border: 1px solid var(--colorCenter);
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+}

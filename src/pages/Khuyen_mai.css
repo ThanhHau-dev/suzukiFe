@@ -1,0 +1,51 @@
+
+
+.Khuyen_mai img {
+    width: 100%;
+}
+
+
+.Khuyen_mai_1 {
+    margin: 100px;
+}
+
+.Khuyen_mai_1 .card {
+    padding: 50px;
+}
+
+.Khuyen_mai_1 h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .Khuyen_mai_1{
+        margin: 0;
+    }
+
+    .Khuyen_mai_1 img {
+        margin-top: 200px;
+        border-radius: 10px;
+    }
+
+    .Khuyen_mai_1 h1 {
+        font-size: 22px;
+    }
+    .Khuyen_mai_1 p {
+        font-size: 14px;
+    }
+
+    .Khuyen_mai_1 .col-md-6,
+    .custom_col {
+      flex: 0 0 90%;
+      max-width: 100%;
+      margin-left: 1px;
+    }
+  
+    .custom_col {
+      overflow-x: auto;
+      padding-bottom: 1rem;
+    }
+}
