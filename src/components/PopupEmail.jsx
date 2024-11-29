@@ -65,6 +65,9 @@ const PopupEmail = () => {
         console.error("Gửi email thất bại:", error);
       }
     );
+
+    // sự kiện tắt popup
+    setaction(!action);
   };
 
   // Trả về JSX để render giao diện
