@@ -24,7 +24,7 @@ const PopupEmail = () => {
 
   // Gọi API emailjs để khởi tạo publicKey
   useEffect(() => {
-    emailjs?.init("w15JVV1AB96-f0lko"); // Thay thế bằng publicKey của bạn
+    emailjs?.init("w15JVV1AB96-f0lko"); 
   }, []);
 
   // Hàm xử lý khi người dùng nhập vào input

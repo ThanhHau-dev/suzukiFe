@@ -708,6 +708,18 @@ span {
 
 }
 
+
+/* bổ sung css cho email đăng kí phần footer trang chủ */
+.EmailFooterHome {
+  border: 1px solid var(--colorCenter);
+  margin-bottom: 10px;
+}
+
+/* chỉnh sửa css reponse cho email input ở footer */
+.footer .inputEmail {
+  margin-top: 0px !important;
+}
+
 /* css cho pc nhỏ và table */
 
 @media (min-width: 768px) and (max-width: 1030px) {
@@ -744,6 +756,11 @@ span {
     margin-top: 117px;
     padding: 30px;
     padding-top: 17px;
+  }
+
+  /* chỉnh sửa css reponse cho email input ở footer */
+  .footer .inputEmail {
+    margin-top: 0px !important;
   }
 
 }
